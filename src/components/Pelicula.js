@@ -1,14 +1,13 @@
 import React from 'react' ;
 
-function Pelicula() {
+function Pelicula(props) {
 
-    let rating = 5.8;
     let generos = ["Accion", "Drama"]
 
     return (
         <>
-            <h2>Titulo de la Pelicula !!!</h2>
-            <p>Rating: {rating} </p>
+            <h2>{props.titulo}</h2>
+            <p>Rating: {props.rating} </p>
             <ul>
                 {generos.map( genero => <li> {genero} </li>)}
             </ul>
