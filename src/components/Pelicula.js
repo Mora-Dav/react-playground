@@ -1,4 +1,5 @@
 import React from 'react' ;
+import './pelicula.css'
 
 function Pelicula(props) {
 
@@ -14,8 +15,8 @@ function Pelicula(props) {
     }
 
     return (
-        <div>
-            <h2>{props.titulo}</h2>
+        <div className='movie'>
+            <h2 className='movie'>{props.titulo}</h2>
             <p>Rating: {props.rating} </p>
                 { listadoDeGeneros }
         </div>
