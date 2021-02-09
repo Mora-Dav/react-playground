@@ -1,6 +1,7 @@
 import ContenedorPublicidad from './components/ContenedorPublicidad';
 import './App.css';
-import TiraPeliculas from './components/TiraPeliculas'
+import TiraPeliculas from './components/TiraPeliculas';
+import Contador from './components/Contador';
 
 function App() {
   return (
@@ -12,9 +13,7 @@ function App() {
           </ContenedorPublicidad>
 
           <TiraPeliculas />
-          <TiraPeliculas />
-          <TiraPeliculas />
-          <TiraPeliculas />
+          <Contador inicial= {0} />
 
           <ContenedorPublicidad>
             <ul>
